@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+
+        .menu{
+            float:left;
+            width:20%;
+            text-align: center;
+            color: #3e3e3e;
+        }
+
+        .menu a{
+            background-color: #D8C3A5;
+            padding: 8px;
+            display: block;
+            margin-top: 7px;
+            width: 100%;
+            color: purple;
+        }
+
+        .menu a:link{
+            text-decoration: none;
+            color: green;
+        }
+
+        .menu a:visited{
+            text-decoration: none;
+            color: black;
+        }
+
+        .menu a:hover{
+            text-decoration: none;
+        }
+
+        .menu a:active{
+            text-decoration: none;
+            color: green;
+        }
+
+        .main{
+            float: left;
+            width:60%;
+            padding: 0 20px;
+        }
+
+        .right{
+            background-color: #EADCC8;
+            float: left;
+            width: 20%;
+            padding: 15px;
+            margin-top: 7px;
+            text-align: center;
+        }
+
+        body{
+            background-color: #F7F1E8;
+        }
+
+        .form-title{
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #5c4d3c;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .input-group input, 
+        .input-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #d1c7bd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 0.85rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #8c7b68;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width:620px){
+            /* For mobile phones: */
+            .menu, .main, .right{
+                width:100%;
+            }
+        }
+    </style>
+    </head>
+    <body style="font-family:Verdana; color:#3e3e3e;">
+    <div style="background-color: #8B6f47;padding: 15px;text-align: center;">
+        <h1>사라진 기술들</h1>
+    </div>
+
+    <div style="overflow:auto">
+        <div class="menu">
+            <a href="floppy.html">플로피디스크</a>
+            <a href="pipi.html">삐삐</a>
+            <a href="cassette.html">카세트테이프</a>
+            <a href="crt.html">CRT 모니터</a>
+            <a href="film.html">필름카메라</a>
+        </div>
+
+        <div class="main">
+            <h2>기술은 사라져도 역사는 남는다</h2>
+            <p name="pp">이 사이트는 과거에 널리 사용되었지만 현재는 거의 볼 수 없는 기술들을 소개하는 사이트입니다.
+            </p>
+            <br>
+            <p name="pp">플로피디스크, 삐삐, CRT 모니터, 카세트테이프, 필름카메라 등 디지털 기술의 발전으로 사라진 다양한 기술들의 특징과 역사를 알아볼 수 있습니다.</p>
+        </div>
+
+        <div class="right">
+            <h2>기술 제보함</h2>
+            <p>이 사이트에 빠진 추억의 기술을 제보해 주세요!</p>
+
+            <form>
+                <div class="input-group">
+                    <div class="form-title">• 제보할 기술 이름 : </div>
+                    <input type="text" id="techName">
+                </div>
+                <div class="input-group">
+                    <div class="form-title">• 그 시절 추억/설명 : </div>
+                    <textarea id="techDesc" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">제보하기</button>
+            </form>
+        </div>
+    </div>
+
+    <div style="background-color: #e5e5e5; text-align: center; padding: 10px; margin-top: 7px;">
+        <p>©copyright </p>
+    </div>
+</body>
+</html>
